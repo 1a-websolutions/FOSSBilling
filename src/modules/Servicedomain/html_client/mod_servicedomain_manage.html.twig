@@ -181,7 +181,7 @@
                         <div class="col-md-5">
                             <label for="whois_phone_cc" class="form-label">{{ 'Phone Country Code'|trans }}</label>
                             <input class="form-control" type="text" name="contact[phone_cc]" id="whois_phone_cc"
-                                   value="{{ request.phone_cc|default(service.contact.phone_cc) }}" required>
+                                   value="+{{ request.phone_cc|default(service.contact.phone_cc) }}" required>
                         </div>
                         <div class="col-md-5">
                             <label for="whois_phone" class="form-label">{{ 'Phone number'|trans }}</label>
